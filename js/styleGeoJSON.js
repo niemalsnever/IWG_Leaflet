@@ -1,5 +1,6 @@
-function numericValueToHex(numericValue) {
-  return numericValue > 1000 ? '#252525' :
+
+function getColor(numericValue) {
+	return numericValue > 1000 ? '#252525' :
         numericValue > 500  ? '#525252' :
         numericValue > 200  ? '#737373' :
         numericValue > 100  ? '#969696' :
@@ -9,10 +10,9 @@ function numericValueToHex(numericValue) {
                               '#ffffff';
 }
 
-
-function stylingWithFeaturePropertyDensity(feature) {
+function setFeatureStyle(feature) {
     return {
-        fillColor: numericValueToHex(feature.properties.density),
+        fillColor: getColor(feature.properties.density),
         weight: 2,
         opacity: 1,
         color: 'white',
