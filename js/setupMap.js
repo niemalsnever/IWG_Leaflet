@@ -9,3 +9,6 @@ let map = L.map('showMap').setView([37.8, -96], 4);
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.light'
 	}).addTo(map);
+
+
+L.geoJson(statesData, {style: stylingWithFeaturePropertyDensity}).addTo(map); // statesData is a variable, defined in us-states.js
