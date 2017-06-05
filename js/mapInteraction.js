@@ -14,12 +14,14 @@ const mapsToBeCompared = { // stores the leaflet-GeoJson and the raw GeoJson. Wa
 
 function getValuesOfBothFeatures(event) {
   console.log("getValuesOfBothFeatures");
+
+  console.log("top: ");
+  console.log(topLayer.feature.properties);
+
   console.log("bottom: ");
   let bottomFeature = getBottomFeatureWithCoordinates(event.latlng).properties;
   console.log(bottomFeature)
   let topLayer = event.target;
-  console.log("top: ");
-  console.log(topLayer.feature.properties);
 };
 
 
