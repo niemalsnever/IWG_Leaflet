@@ -10,39 +10,41 @@ function highlightFeature(event) {
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
-  }
+  };
 
   info.update(layer.feature.properties);
-}
+};
 
 
-function resetHighlight(e) {
-  geojson.resetStyle(e.target);
+function resetHighlight(event) {
+  geojson.resetStyle(event.target);
   info.update();
-}
+};
 
-
-function switchTopBottomMapAndUpdateView(){
-  map.removeLayer(mapsToBeCompared.top.leaflet);
-  let newTop = mapsToBeCompared.bottom;
-  mapsToBeCompared.bottom = mapsToBeCompared.top;
-  mapsToBeCompared.top = newTop;
-  // addTopMapToMap?
-}
 
 function addTopMapToMap() {
   mapsToBeCompared.top.leaflet.addTo(map);
-}
+};
 
-function removeLayer(layer){
-  console.log("map = " + map);
-  map.removeLayer(layer);
-}
+
+// USE LATER FOR LAYER SIWITCHING
+// function switchTopBottomMapAndUpdateView(){
+//   map.removeLayer(mapsToBeCompared.top.leaflet);
+//   let newTop = mapsToBeCompared.bottom;
+//   mapsToBeCompared.bottom = mapsToBeCompared.top;
+//   mapsToBeCompared.top = newTop;
+//   // addTopMapToMap?
+// };
+//
+//
+// function removeLayer(layer){
+//   console.log("map = " + map);
+//   map.removeLayer(layer);
+// };
 
 
 
 function setActionOnInfoControl(map) {
-
   info.onAdd = function(map) {
     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
     this.update();
@@ -57,5 +59,4 @@ function setActionOnInfoControl(map) {
   };
 
   info.addTo(map);
-
-}
+};

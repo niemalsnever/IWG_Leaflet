@@ -1,4 +1,3 @@
-
 function getColor(numericValue) {
 	return numericValue > 1000 ? '#252525' :
         numericValue > 500  ? '#525252' :
@@ -8,7 +7,7 @@ function getColor(numericValue) {
         numericValue > 20   ? '#d9d9d9' :
         numericValue > 10   ? '#f0f0f0' :
                               '#ffffff';
-}
+};
 
 function setFeatureStyle(feature) {
     return {
@@ -19,4 +18,4 @@ function setFeatureStyle(feature) {
         dashArray: '3',
         fillOpacity: 0.7
     };
-}
+};
