@@ -8,10 +8,11 @@ function highlightFeature(event) {
     fillOpacity: 0.7
   });
 
-  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+ if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
+    console.log(layer.feature)
+    responsiveVoice.speak(layer.feature.properties.name +", "+ layer.feature.properties.density);
   };
-
   info.update(layer.feature.properties);
 };
 
