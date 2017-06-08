@@ -11,7 +11,7 @@ function highlightFeature(event) {
  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
     console.log(layer.feature)
-    responsiveVoice.speak(layer.feature.properties.name +", "+ layer.feature.properties.density);
+    responsiveVoice.speak(layer.feature.properties.name +", population density "+ layer.feature.properties.density + " per squarekilometer");
   };
   info.update(layer.feature.properties);
 };
