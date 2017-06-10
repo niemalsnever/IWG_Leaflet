@@ -8,8 +8,7 @@ let statesData2 = {
       "properties": {
         "name": "Alabama",
         "value": 100.65
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -56,8 +55,7 @@ let statesData2 = {
       "properties": {
         "name": "Alaska",
         "value": 11.264
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
@@ -1299,8 +1297,7 @@ let statesData2 = {
       "properties": {
         "name": "Arizona",
         "value": 67.05
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1346,8 +1343,7 @@ let statesData2 = {
       "properties": {
         "name": "Arkansas",
         "value": 66.43
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1398,8 +1394,7 @@ let statesData2 = {
       "properties": {
         "name": "California",
         "value": 251.7
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1506,8 +1501,7 @@ let statesData2 = {
       "properties": {
         "name": "Colorado",
         "value": 59.33
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1537,8 +1531,7 @@ let statesData2 = {
       "properties": {
         "name": "Connecticut",
         "value": 749.1
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1568,8 +1561,7 @@ let statesData2 = {
       "properties": {
         "name": "Delaware",
         "value": 474.3
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1596,8 +1588,7 @@ let statesData2 = {
       "properties": {
         "name": "District of Columbia",
         "value": 10075
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1616,8 +1607,7 @@ let statesData2 = {
       "properties": {
         "name": "Florida",
         "value": 353.4
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1709,8 +1699,7 @@ let statesData2 = {
       "properties": {
         "name": "Georgia",
         "value": 179.5
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1775,8 +1764,7 @@ let statesData2 = {
       "properties": {
         "name": "Hawaii",
         "value": 224.1
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
@@ -1857,8 +1845,7 @@ let statesData2 = {
       "properties": {
         "name": "Idaho",
         "value": 29.15
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -1938,8 +1925,7 @@ let statesData2 = {
       "properties": {
         "name": "Illinois",
         "value": 241.5
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2020,8 +2006,7 @@ let statesData2 = {
       "properties": {
         "name": "Indiana",
         "value": 191.7
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2081,8 +2066,7 @@ let statesData2 = {
       "properties": {
         "name": "Iowa",
         "value": 64.81
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2146,8 +2130,7 @@ let statesData2 = {
       "properties": {
         "name": "Kansas",
         "value": 45.09
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2174,8 +2157,7 @@ let statesData2 = {
       "properties": {
         "name": "Kentucky",
         "value": 120
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2264,8 +2246,7 @@ let statesData2 = {
       "properties": {
         "name": "Louisiana",
         "value": 115
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2355,8 +2336,7 @@ let statesData2 = {
       "properties": {
         "name": "Maine",
         "value": 53.04
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2436,8 +2416,7 @@ let statesData2 = {
       "properties": {
         "name": "Maryland",
         "value": 606.3
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
@@ -2521,8 +2500,7 @@ let statesData2 = {
       "properties": {
         "name": "Massachusetts",
         "value": 850.2
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2571,8 +2549,7 @@ let statesData2 = {
       "properties": {
         "name": "Michigan",
         "value": 183.9
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
@@ -2752,8 +2729,7 @@ let statesData2 = {
       "properties": {
         "name": "Minnesota",
         "value": 77.14
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2850,8 +2826,7 @@ let statesData2 = {
       "properties": {
         "name": "Mississippi",
         "value": 73.50
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2911,8 +2886,7 @@ let statesData2 = {
       "properties": {
         "name": "Missouri",
         "value": 97.26
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -2979,8 +2953,7 @@ let statesData2 = {
       "properties": {
         "name": "Montana",
         "value": 7.858
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3046,8 +3019,7 @@ let statesData2 = {
       "properties": {
         "name": "Nebraska",
         "value": 33.97
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3090,8 +3062,7 @@ let statesData2 = {
       "properties": {
         "name": "Nevada",
         "value": 34.80
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3126,8 +3097,7 @@ let statesData2 = {
       "properties": {
         "name": "New Hampshire",
         "value": 157
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3169,8 +3139,7 @@ let statesData2 = {
       "properties": {
         "name": "New Jersey",
         "value": 1199
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3216,8 +3185,7 @@ let statesData2 = {
       "properties": {
         "name": "New Mexico",
         "value": 27.16
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3248,8 +3216,7 @@ let statesData2 = {
       "properties": {
         "name": "New York",
         "value": 422.3
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3331,8 +3298,7 @@ let statesData2 = {
       "properties": {
         "name": "North Carolina",
         "value": 208.2
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3407,8 +3373,7 @@ let statesData2 = {
       "properties": {
         "name": "North Dakota",
         "value": 10.916
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3438,8 +3403,7 @@ let statesData2 = {
       "properties": {
         "name": "Ohio",
         "value": 291.9
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3500,8 +3464,7 @@ let statesData2 = {
       "properties": {
         "name": "Oklahoma",
         "value": 65.22
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3560,8 +3523,7 @@ let statesData2 = {
       "properties": {
         "name": "Oregon",
         "value": 50.33
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3631,8 +3593,7 @@ let statesData2 = {
       "properties": {
         "name": "Pennsylvania",
         "value": 294.3
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3679,8 +3640,7 @@ let statesData2 = {
       "properties": {
         "name": "Rhode Island",
         "value": 1016
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
@@ -3715,8 +3675,7 @@ let statesData2 = {
       "properties": {
         "name": "South Carolina",
         "value": 165.4
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3774,8 +3733,7 @@ let statesData2 = {
       "properties": {
         "name": "South Dakota",
         "value": 108.07
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3818,8 +3776,7 @@ let statesData2 = {
       "properties": {
         "name": "Tennessee",
         "value": 98.08
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3876,8 +3833,7 @@ let statesData2 = {
       "properties": {
         "name": "Texas",
         "value": 108.07
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -4043,8 +3999,7 @@ let statesData2 = {
       "properties": {
         "name": "Utah",
         "value": 44.30
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -4070,8 +4025,7 @@ let statesData2 = {
       "properties": {
         "name": "Vermont",
         "value": 77.73
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -4113,8 +4067,7 @@ let statesData2 = {
       "properties": {
         "name": "Virginia",
         "value": 214.5
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
@@ -4218,8 +4171,7 @@ let statesData2 = {
       "properties": {
         "name": "Washington",
         "value": 112.6
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
@@ -4315,8 +4267,7 @@ let statesData2 = {
       "properties": {
         "name": "West Virginia",
         "value": 87.06
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -4395,8 +4346,7 @@ let statesData2 = {
       "properties": {
         "name": "Wisconsin",
         "value": 115.2
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -4485,8 +4435,7 @@ let statesData2 = {
       "properties": {
         "name": "Wyoming",
         "value": 15.851
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -4513,8 +4462,7 @@ let statesData2 = {
       "properties": {
         "name": "Puerto Rico",
         "value": 1092
-      },
-      "geometry": {
+      "unit": "people per squarekilometer" }, "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
