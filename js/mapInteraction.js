@@ -61,7 +61,7 @@ function setActionOnEachGeoJSONAndAddThemToMapsToBeCompared(map) {
 
 function addEventsToFeatures(feature, layer) {
   layer.on({
-    mouseover: highlightFeature, // Could be sound for new Feature
+    mouseover: mouseover, // Could be sound for new Feature
     mouseout: resetHighlight,
     click: getValuesOfBothFeatures
   });
