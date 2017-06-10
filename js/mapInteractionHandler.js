@@ -1,6 +1,13 @@
 function mouseover(event) {
-  var layer = event.target;
+    var layer = event.target;
 
+    sayPropertyName(layer);
+    sayPropertyValueAndUnit(layer);
+    highlightFeature(layer);
+};
+
+
+function highlightFeature(layer) {
   layer.setStyle({
     weight: 5,
     color: '#666',
@@ -10,12 +17,10 @@ function mouseover(event) {
 
  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
-    console.log(layer.feature)
-    sayPropertyName(layer);
-    sayPropertyValueAndUnit(layer);
   };
+
   info.update(layer.feature.properties);
-};
+}
 
 
 function resetHighlight(event) {
