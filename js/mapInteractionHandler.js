@@ -61,7 +61,7 @@ function setActionOnInfoControl(map) {
   // method that we will use to update the control based on feature properties passed
   info.update = function(props) {
     this._div.innerHTML = '<h4>US Population Density</h4>' + (props ?
-      '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>' :
+      '<b>' + props.name + '</b><br />' + props.value + ' ' + props.unit :
       'Hover over a state');
   };
 
