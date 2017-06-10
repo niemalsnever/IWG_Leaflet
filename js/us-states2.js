@@ -7,7 +7,7 @@ let statesData2 = {
       "id": "01",
       "properties": {
         "name": "Alabama",
-        "density": 100.65
+        "value": 100.65
       },
       "geometry": {
         "type": "Polygon",
@@ -55,7 +55,7 @@ let statesData2 = {
       "id": "02",
       "properties": {
         "name": "Alaska",
-        "density": 11.264
+        "value": 11.264
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1298,7 +1298,7 @@ let statesData2 = {
       "id": "04",
       "properties": {
         "name": "Arizona",
-        "density": 67.05
+        "value": 67.05
       },
       "geometry": {
         "type": "Polygon",
@@ -1345,7 +1345,7 @@ let statesData2 = {
       "id": "05",
       "properties": {
         "name": "Arkansas",
-        "density": 66.43
+        "value": 66.43
       },
       "geometry": {
         "type": "Polygon",
@@ -1397,7 +1397,7 @@ let statesData2 = {
       "id": "06",
       "properties": {
         "name": "California",
-        "density": 251.7
+        "value": 251.7
       },
       "geometry": {
         "type": "Polygon",
@@ -1505,7 +1505,7 @@ let statesData2 = {
       "id": "08",
       "properties": {
         "name": "Colorado",
-        "density": 59.33
+        "value": 59.33
       },
       "geometry": {
         "type": "Polygon",
@@ -1536,7 +1536,7 @@ let statesData2 = {
       "id": "09",
       "properties": {
         "name": "Connecticut",
-        "density": 749.1
+        "value": 749.1
       },
       "geometry": {
         "type": "Polygon",
@@ -1567,7 +1567,7 @@ let statesData2 = {
       "id": "10",
       "properties": {
         "name": "Delaware",
-        "density": 474.3
+        "value": 474.3
       },
       "geometry": {
         "type": "Polygon",
@@ -1595,7 +1595,7 @@ let statesData2 = {
       "id": "11",
       "properties": {
         "name": "District of Columbia",
-        "density": 10075
+        "value": 10075
       },
       "geometry": {
         "type": "Polygon",
@@ -1615,7 +1615,7 @@ let statesData2 = {
       "id": "12",
       "properties": {
         "name": "Florida",
-        "density": 353.4
+        "value": 353.4
       },
       "geometry": {
         "type": "Polygon",
@@ -1708,7 +1708,7 @@ let statesData2 = {
       "id": "13",
       "properties": {
         "name": "Georgia",
-        "density": 179.5
+        "value": 179.5
       },
       "geometry": {
         "type": "Polygon",
@@ -1774,7 +1774,7 @@ let statesData2 = {
       "id": "15",
       "properties": {
         "name": "Hawaii",
-        "density": 224.1
+        "value": 224.1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1856,7 +1856,7 @@ let statesData2 = {
       "id": "16",
       "properties": {
         "name": "Idaho",
-        "density": 29.15
+        "value": 29.15
       },
       "geometry": {
         "type": "Polygon",
@@ -1937,7 +1937,7 @@ let statesData2 = {
       "id": "17",
       "properties": {
         "name": "Illinois",
-        "density": 241.5
+        "value": 241.5
       },
       "geometry": {
         "type": "Polygon",
@@ -2019,7 +2019,7 @@ let statesData2 = {
       "id": "18",
       "properties": {
         "name": "Indiana",
-        "density": 191.7
+        "value": 191.7
       },
       "geometry": {
         "type": "Polygon",
@@ -2080,7 +2080,7 @@ let statesData2 = {
       "id": "19",
       "properties": {
         "name": "Iowa",
-        "density": 64.81
+        "value": 64.81
       },
       "geometry": {
         "type": "Polygon",
@@ -2145,7 +2145,7 @@ let statesData2 = {
       "id": "20",
       "properties": {
         "name": "Kansas",
-        "density": 45.09
+        "value": 45.09
       },
       "geometry": {
         "type": "Polygon",
@@ -2173,7 +2173,7 @@ let statesData2 = {
       "id": "21",
       "properties": {
         "name": "Kentucky",
-        "density": 120
+        "value": 120
       },
       "geometry": {
         "type": "Polygon",
@@ -2263,7 +2263,7 @@ let statesData2 = {
       "id": "22",
       "properties": {
         "name": "Louisiana",
-        "density": 115
+        "value": 115
       },
       "geometry": {
         "type": "Polygon",
@@ -2354,7 +2354,7 @@ let statesData2 = {
       "id": "23",
       "properties": {
         "name": "Maine",
-        "density": 53.04
+        "value": 53.04
       },
       "geometry": {
         "type": "Polygon",
@@ -2435,7 +2435,7 @@ let statesData2 = {
       "id": "24",
       "properties": {
         "name": "Maryland",
-        "density": 606.3
+        "value": 606.3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2520,7 +2520,7 @@ let statesData2 = {
       "id": "25",
       "properties": {
         "name": "Massachusetts",
-        "density": 850.2
+        "value": 850.2
       },
       "geometry": {
         "type": "Polygon",
@@ -2570,7 +2570,7 @@ let statesData2 = {
       "id": "26",
       "properties": {
         "name": "Michigan",
-        "density": 183.9
+        "value": 183.9
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2751,7 +2751,7 @@ let statesData2 = {
       "id": "27",
       "properties": {
         "name": "Minnesota",
-        "density": 77.14
+        "value": 77.14
       },
       "geometry": {
         "type": "Polygon",
@@ -2849,7 +2849,7 @@ let statesData2 = {
       "id": "28",
       "properties": {
         "name": "Mississippi",
-        "density": 73.50
+        "value": 73.50
       },
       "geometry": {
         "type": "Polygon",
@@ -2910,7 +2910,7 @@ let statesData2 = {
       "id": "29",
       "properties": {
         "name": "Missouri",
-        "density": 97.26
+        "value": 97.26
       },
       "geometry": {
         "type": "Polygon",
@@ -2978,7 +2978,7 @@ let statesData2 = {
       "id": "30",
       "properties": {
         "name": "Montana",
-        "density": 7.858
+        "value": 7.858
       },
       "geometry": {
         "type": "Polygon",
@@ -3045,7 +3045,7 @@ let statesData2 = {
       "id": "31",
       "properties": {
         "name": "Nebraska",
-        "density": 33.97
+        "value": 33.97
       },
       "geometry": {
         "type": "Polygon",
@@ -3089,7 +3089,7 @@ let statesData2 = {
       "id": "32",
       "properties": {
         "name": "Nevada",
-        "density": 34.80
+        "value": 34.80
       },
       "geometry": {
         "type": "Polygon",
@@ -3125,7 +3125,7 @@ let statesData2 = {
       "id": "33",
       "properties": {
         "name": "New Hampshire",
-        "density": 157
+        "value": 157
       },
       "geometry": {
         "type": "Polygon",
@@ -3168,7 +3168,7 @@ let statesData2 = {
       "id": "34",
       "properties": {
         "name": "New Jersey",
-        "density": 1199
+        "value": 1199
       },
       "geometry": {
         "type": "Polygon",
@@ -3215,7 +3215,7 @@ let statesData2 = {
       "id": "35",
       "properties": {
         "name": "New Mexico",
-        "density": 27.16
+        "value": 27.16
       },
       "geometry": {
         "type": "Polygon",
@@ -3247,7 +3247,7 @@ let statesData2 = {
       "id": "36",
       "properties": {
         "name": "New York",
-        "density": 422.3
+        "value": 422.3
       },
       "geometry": {
         "type": "Polygon",
@@ -3330,7 +3330,7 @@ let statesData2 = {
       "id": "37",
       "properties": {
         "name": "North Carolina",
-        "density": 208.2
+        "value": 208.2
       },
       "geometry": {
         "type": "Polygon",
@@ -3406,7 +3406,7 @@ let statesData2 = {
       "id": "38",
       "properties": {
         "name": "North Dakota",
-        "density": 10.916
+        "value": 10.916
       },
       "geometry": {
         "type": "Polygon",
@@ -3437,7 +3437,7 @@ let statesData2 = {
       "id": "39",
       "properties": {
         "name": "Ohio",
-        "density": 291.9
+        "value": 291.9
       },
       "geometry": {
         "type": "Polygon",
@@ -3499,7 +3499,7 @@ let statesData2 = {
       "id": "40",
       "properties": {
         "name": "Oklahoma",
-        "density": 65.22
+        "value": 65.22
       },
       "geometry": {
         "type": "Polygon",
@@ -3559,7 +3559,7 @@ let statesData2 = {
       "id": "41",
       "properties": {
         "name": "Oregon",
-        "density": 50.33
+        "value": 50.33
       },
       "geometry": {
         "type": "Polygon",
@@ -3630,7 +3630,7 @@ let statesData2 = {
       "id": "42",
       "properties": {
         "name": "Pennsylvania",
-        "density": 294.3
+        "value": 294.3
       },
       "geometry": {
         "type": "Polygon",
@@ -3678,7 +3678,7 @@ let statesData2 = {
       "id": "44",
       "properties": {
         "name": "Rhode Island",
-        "density": 1016
+        "value": 1016
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3714,7 +3714,7 @@ let statesData2 = {
       "id": "45",
       "properties": {
         "name": "South Carolina",
-        "density": 165.4
+        "value": 165.4
       },
       "geometry": {
         "type": "Polygon",
@@ -3773,7 +3773,7 @@ let statesData2 = {
       "id": "46",
       "properties": {
         "name": "South Dakota",
-        "density": 108.07
+        "value": 108.07
       },
       "geometry": {
         "type": "Polygon",
@@ -3817,7 +3817,7 @@ let statesData2 = {
       "id": "47",
       "properties": {
         "name": "Tennessee",
-        "density": 98.08
+        "value": 98.08
       },
       "geometry": {
         "type": "Polygon",
@@ -3875,7 +3875,7 @@ let statesData2 = {
       "id": "48",
       "properties": {
         "name": "Texas",
-        "density": 108.07
+        "value": 108.07
       },
       "geometry": {
         "type": "Polygon",
@@ -4042,7 +4042,7 @@ let statesData2 = {
       "id": "49",
       "properties": {
         "name": "Utah",
-        "density": 44.30
+        "value": 44.30
       },
       "geometry": {
         "type": "Polygon",
@@ -4069,7 +4069,7 @@ let statesData2 = {
       "id": "50",
       "properties": {
         "name": "Vermont",
-        "density": 77.73
+        "value": 77.73
       },
       "geometry": {
         "type": "Polygon",
@@ -4112,7 +4112,7 @@ let statesData2 = {
       "id": "51",
       "properties": {
         "name": "Virginia",
-        "density": 214.5
+        "value": 214.5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4217,7 +4217,7 @@ let statesData2 = {
       "id": "53",
       "properties": {
         "name": "Washington",
-        "density": 112.6
+        "value": 112.6
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4314,7 +4314,7 @@ let statesData2 = {
       "id": "54",
       "properties": {
         "name": "West Virginia",
-        "density": 87.06
+        "value": 87.06
       },
       "geometry": {
         "type": "Polygon",
@@ -4394,7 +4394,7 @@ let statesData2 = {
       "id": "55",
       "properties": {
         "name": "Wisconsin",
-        "density": 115.2
+        "value": 115.2
       },
       "geometry": {
         "type": "Polygon",
@@ -4484,7 +4484,7 @@ let statesData2 = {
       "id": "56",
       "properties": {
         "name": "Wyoming",
-        "density": 15.851
+        "value": 15.851
       },
       "geometry": {
         "type": "Polygon",
@@ -4512,7 +4512,7 @@ let statesData2 = {
       "id": "72",
       "properties": {
         "name": "Puerto Rico",
-        "density": 1092
+        "value": 1092
       },
       "geometry": {
         "type": "Polygon",
