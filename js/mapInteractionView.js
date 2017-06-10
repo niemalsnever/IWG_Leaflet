@@ -1,4 +1,4 @@
-function highlightFeature(event) {
+function mouseover(event) {
   var layer = event.target;
 
   layer.setStyle({
@@ -11,7 +11,8 @@ function highlightFeature(event) {
  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
     console.log(layer.feature)
-    responsiveVoice.speak(layer.feature.properties.name +", population density "+ layer.feature.properties.density + " per squarekilometer");
+    sayPropertyName(layer);
+    sayPropertyValueAndUnit(layer);
   };
   info.update(layer.feature.properties);
 };
