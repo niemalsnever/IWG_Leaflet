@@ -1,9 +1,18 @@
+
+
 function mouseover(event) {
     var layer = event.target;
 
-    sayPropertyName(layer);
-    sayPropertyValueAndUnit(layer);
     highlightFeature(layer);
+
+    if(pressedKeys.calculate) {
+      console.log("differenceTopBottomFratureValues() " + differenceTopBottomFratureValues(event));
+    }
+    else {
+      sayPropertyName(layer);
+      sayPropertyValueAndUnit(layer);
+    }
+
 };
 
 
