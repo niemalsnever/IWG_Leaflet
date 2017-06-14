@@ -4,6 +4,7 @@ function mouseover(event) {
     var layer = event.target;
 
     highlightFeature(layer);
+    playBorderSound();
 
     if(pressedKeys.calculate) {
       console.log("differenceTopBottomFratureValues() " + differenceTopBottomFratureValues(event));
