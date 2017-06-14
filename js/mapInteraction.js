@@ -1,6 +1,10 @@
 var info = L.control(); // Used to display on mouseover property name and density
 
-const mapsToBeCompared = { // stores the leaflet-GeoJson and the raw GeoJson. Want to use both because it is easier to get bottom values with raw GeoJSON
+var pressedKeys = {
+  calculate : false
+}
+
+var mapsToBeCompared = { // stores the leaflet-GeoJson and the raw GeoJson. Want to use both because it is easier to get bottom values with raw GeoJSON
   top: {
     raw: null,
     leaflet: null
@@ -12,17 +16,25 @@ const mapsToBeCompared = { // stores the leaflet-GeoJson and the raw GeoJson. Wa
 };
 
 
-function getValuesOfBothFeatures(event) {
-  console.log("getValuesOfBothFeatures");
+$(document).on("keypress", function (e) {
+  var code = e.keyCode || e.which;
+  console.log(code)
+  if(code === 99) { //99 stands for 'c', like calculate
+    pressedKeys.calculate = !pressedKeys.calculate;
+  };
+});
 
-  console.log("top: ");
-  console.log(topLayer.feature.properties);
 
-  console.log("bottom: ");
-  let bottomFeature = getBottomFeatureWithCoordinates(event.latlng).properties;
-  console.log(bottomFeature)
-  let topLayer = event.target;
+
+function getPropertiesOfBothFeatures(event) {
+  const result = {
+    top: event.target.feature.properties,
+    bottom: getBottomFeatureWithCoordinates(event.latlng).properties
+  };
+
+  return result;
 };
+
 
 
 function getBottomFeatureWithCoordinates(latlng) {
@@ -33,6 +45,7 @@ function getBottomFeatureWithCoordinates(latlng) {
   }
   return false;
 };
+
 
 
 function setActionOnEachGeoJSONAndAddThemToMapsToBeCompared(map) {
@@ -59,13 +72,19 @@ function setActionOnEachGeoJSONAndAddThemToMapsToBeCompared(map) {
   addMapsToMapsToBeCompared(top, bottom);
 };
 
+
+
+
+
 function addEventsToFeatures(feature, layer) {
   layer.on({
     mouseover: mouseover, // Could be sound for new Feature
     mouseout: resetHighlight,
-    click: getValuesOfBothFeatures
+    click: getPropertiesOfBothFeatures
   });
 };
+
+
 
 function addMapsToMapsToBeCompared(topMap, bottomMap) {
   mapsToBeCompared.top = topMap;
