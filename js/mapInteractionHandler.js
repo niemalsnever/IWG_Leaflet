@@ -6,6 +6,18 @@ function mouseover(event) {
     highlightFeature(layer);
     playBorderSound();
 
+    if(pressedKeys.navigate) {
+      while(pressedKeys.navigate) {
+        // Aktuelle Mausposition
+        // Er,ottöe nächste Feature
+        // Nehme dieses als Navigationsausgangspunkt - alle Weiteren Berechnungen auf diesen Koordinaten.
+        // Ermittle kürzeste Distanz
+        // Wenn Sich diese geändert hat:
+        //    Änder Ton
+        //    Ansonsten spiele ton weiter
+      }
+    }
+
     if(pressedKeys.calculate) {
       console.log("differenceTopBottomFratureValues() " + differenceTopBottomFratureValues(event));
     }

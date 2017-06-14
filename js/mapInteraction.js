@@ -1,7 +1,8 @@
 var info = L.control(); // Used to display on mouseover property name and density
 
 var pressedKeys = {
-  calculate : false
+  calculate : false,
+  navigate : false
 }
 
 var mapsToBeCompared = { // stores the leaflet-GeoJson and the raw GeoJson. Want to use both because it is easier to get bottom values with raw GeoJSON
@@ -22,6 +23,11 @@ $(document).on("keypress", function (e) {
   if(code === 99) { //99 stands for 'c', like calculate
     pressedKeys.calculate = !pressedKeys.calculate;
   };
+
+  if(code === 110) { //110 stands for 'n', like navigate
+    pressedKeys.navigate = !pressedKeys.navigate;
+  };
+
 });
 
 
