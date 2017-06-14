@@ -5,6 +5,8 @@ var pressedKeys = {
   navigate : false
 }
 
+var nearestFeatureToMouseOnMap = null;
+
 var mapsToBeCompared = { // stores the leaflet-GeoJson and the raw GeoJson. Want to use both because it is easier to get bottom values with raw GeoJSON
   top: {
     raw: null,
@@ -25,7 +27,17 @@ $(document).on("keypress", function (e) {
   };
 
   if(code === 110) { //110 stands for 'n', like navigate
+
+    nearestFeatureToMouseOnMap = null; // Delete it so it is calculated agin after a new press of null
     pressedKeys.navigate = !pressedKeys.navigate;
+
+    if(!pressedKeys.navigate) { // If nafigatoin stops, stop sound
+      navigationSound.stop();
+    }
+    else {  // If navigation starts
+      navigationSound.play();
+      navigationSound.frequency = 0;
+    }
   };
 
 });

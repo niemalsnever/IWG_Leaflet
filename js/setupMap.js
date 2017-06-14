@@ -15,23 +15,34 @@ map.addEventListener('mousemove', function(ev) {
 
 
 
-   if(pressedKeys.navigate) {
-     let lat = ev.latlng.lat;
-     let lng = ev.latlng.lng;
+  if (pressedKeys.navigate) { // To disable sound as soon feature is reached, set pressedKeys.navigate = false
+    let lat = ev.latlng.lat;
+    let lng = ev.latlng.lng;
 
-     let nearestFeature = getNearestFeature(lat, lng);
-     console.log(nearestFeature);
-       // Aktuelle Mausposition
-       // Er,ottöe nächste Feature
-       // Nehme dieses als Navigationsausgangspunkt - alle Weiteren Berechnungen auf diesen Koordinaten.
-       // Ermittle kürzeste Distanz
-       // Wenn Sich diese geändert hat:
-       //    Änder Ton
-       //    Ansonsten spiele ton weiter
-       //
-       //    Sound mit pizzicato?
+    if (!nearestFeatureToMouseOnMap) { // Calculate only onthe for eath press of n. After each press of n, nearestFeatureToMouseOnMap will be set to null
+      nearestFeatureToMouseOnMap = getNearestFeature(lat, lng);
+    };
+    console.log(nearestFeatureToMouseOnMap);
 
-   }
+    let currentDistance = getCurrentDistanceToNearestFeature(nearestFeatureToMouseOnMap, lat, lng);
+    console.log(currentDistance);
+
+  setDistancereatedSoundFrequence();
+
+
+
+    // Aktuelle Mausposition
+    // Er,ottöe nächste Feature
+    // Nehme dieses als Navigationsausgangspunkt - alle Weiteren Berechnungen auf diesen Koordinaten.
+    // Ermittle kürzeste Distanz
+    // Wenn Sich diese geändert hat:
+    //    Änder Ton
+    //    Ansonsten spiele ton weiter
+    //
+    //    Sound mit pizzicato?
+
+  }
+
 
 });
 

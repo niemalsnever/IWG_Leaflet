@@ -1,3 +1,38 @@
+const octaven = [{min: 0, max: 10, frq: 200}];
+
+(function() {
+  let freqence = 200
+  let add = 0;
+  for(let i=10; i < 2500; i = i + 10){
+    let temp = {};
+    temp["min"] = i + 1;
+    add = add + 10;
+    temp["max"] = i + add;
+    freqence = freqence + 10;
+    temp["frq"] = freqence
+    octaven.push(temp);
+  }
+  console.log(octaven)
+})();
+
+
+
+var navigationSound = new Pizzicato.Sound({
+  source: 'wave',
+  options: {
+    frequency: 0
+  }
+});
+
+function setDistancereatedSoundFrequence() {
+  return null;
+};
+
+function getCurrentDistanceToNearestFeature(nearestFeatureToMouseOnMap, lat, lng) {
+  return getMinimalDistanceToFeature(nearestFeatureToMouseOnMap.feature.geometry.coordinates, lat, lng);
+};
+
+
 function getNearestFeature(mouseLat, mouseLng) {
   let nearestFeature = null;
   let nearestDistance = Infinity;
