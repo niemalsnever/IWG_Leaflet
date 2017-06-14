@@ -2,26 +2,11 @@
 
 function mouseover(event) {
     var layer = event.target;
-
+    pressedKeys.navigate = false;
+    navigationSound.stop();
     highlightFeature(layer);
     playBorderSound();
 
-    if(pressedKeys.navigate) {
-
-        console.log("pressedKeys.navigate " + pressedKeys.navigate)
-        distance();
-
-        // Aktuelle Mausposition
-        // Er,ottöe nächste Feature
-        // Nehme dieses als Navigationsausgangspunkt - alle Weiteren Berechnungen auf diesen Koordinaten.
-        // Ermittle kürzeste Distanz
-        // Wenn Sich diese geändert hat:
-        //    Änder Ton
-        //    Ansonsten spiele ton weiter
-        //
-        //    Sound mit pizzicato?
-
-    }
 
     if(pressedKeys.calculate) {
       console.log("differenceTopBottomFratureValues() " + differenceTopBottomFratureValues(event));

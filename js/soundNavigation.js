@@ -1,9 +1,13 @@
-const octaven = [{min: 0, max: 10, frq: 200}];
+const octaven = [{
+  min: 0,
+  max: 10,
+  frq: 200
+}];
 
 (function() {
   let freqence = 200
   let add = 0;
-  for(let i=10; i < 2500; i = i + 10){
+  for (let i = 10; i < 2500; i = i + 10) {
     let temp = {};
     temp["min"] = i + 1;
     add = add + 10;
@@ -17,6 +21,50 @@ const octaven = [{min: 0, max: 10, frq: 200}];
 
 
 
+function getFrequenzeForValue(value) {
+  console.log("value DISTANCE" + value);
+  console.log("zugehörige Intervall");
+  console.log(octaven[getIntervalIndexForValue(value)]);
+  return octaven[getIntervalIndexForValue(value)].frq;
+}
+
+function getIntervalIndexForValue(value) {
+  console.log("getIntervalIndexForValue");
+  // Grenzfall testen
+  if (octaven[octaven.length - 1].max < value ) {
+    return octaven.length - 1;
+  }
+
+  return binarySearchForIntervalIndex(octaven, value);
+
+}
+
+
+function binarySearchForIntervalIndex(items, value) {
+  console.log("binarySearchForIntervalIndex");
+  var firstIndex = 0,
+    lastIndex = items.length - 1,
+    middleIndex = Math.floor((lastIndex + firstIndex) / 2);
+
+  while ((!valueInInterval(octaven[middleIndex], value)) && firstIndex < lastIndex) {
+    if (value < octaven[middleIndex].min) {
+      lastIndex = middleIndex - 1;
+    } else if (value > octaven[middleIndex].max) {
+      firstIndex = middleIndex + 1;
+    }
+    middleIndex = Math.floor((lastIndex + firstIndex) / 2);
+  }
+
+  return ((!valueInInterval(octaven[middleIndex], value)) ? -1 : middleIndex);
+}
+
+function valueInInterval(interval, value) {
+  console.log("valueInInterval");
+  let untereGrenze = interval.min <= value;
+  let obereGrenze = value <= interval.max;
+  return untereGrenze && obereGrenze;
+}
+
 var navigationSound = new Pizzicato.Sound({
   source: 'wave',
   options: {
@@ -24,9 +72,7 @@ var navigationSound = new Pizzicato.Sound({
   }
 });
 
-function setDistancereatedSoundFrequence() {
-  return null;
-};
+
 
 function getCurrentDistanceToNearestFeature(nearestFeatureToMouseOnMap, lat, lng) {
   return getMinimalDistanceToFeature(nearestFeatureToMouseOnMap.feature.geometry.coordinates, lat, lng);
@@ -44,8 +90,10 @@ function getNearestFeature(mouseLat, mouseLng) {
       nearestDistance = distance;
     }
   });
-  return {feature: nearestFeature,
-          distance: nearestDistance};
+  return {
+    feature: nearestFeature,
+    distance: nearestDistance
+  };
 };
 
 

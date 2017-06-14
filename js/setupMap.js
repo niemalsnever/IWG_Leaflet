@@ -27,19 +27,8 @@ map.addEventListener('mousemove', function(ev) {
     let currentDistance = getCurrentDistanceToNearestFeature(nearestFeatureToMouseOnMap, lat, lng);
     console.log(currentDistance);
 
-  setDistancereatedSoundFrequence();
-
-
-
-    // Aktuelle Mausposition
-    // Er,ottöe nächste Feature
-    // Nehme dieses als Navigationsausgangspunkt - alle Weiteren Berechnungen auf diesen Koordinaten.
-    // Ermittle kürzeste Distanz
-    // Wenn Sich diese geändert hat:
-    //    Änder Ton
-    //    Ansonsten spiele ton weiter
-    //
-    //    Sound mit pizzicato?
+    getFrequenzeForValue(currentDistance);
+    navigationSound.frequency = getFrequenzeForValue(currentDistance);
 
   }
 
