@@ -7,7 +7,10 @@ function mouseover(event) {
     playBorderSound();
 
     if(pressedKeys.navigate) {
-      while(pressedKeys.navigate) {
+
+        console.log("pressedKeys.navigate " + pressedKeys.navigate)
+        distance();
+
         // Aktuelle Mausposition
         // Er,ottöe nächste Feature
         // Nehme dieses als Navigationsausgangspunkt - alle Weiteren Berechnungen auf diesen Koordinaten.
@@ -15,7 +18,9 @@ function mouseover(event) {
         // Wenn Sich diese geändert hat:
         //    Änder Ton
         //    Ansonsten spiele ton weiter
-      }
+        //
+        //    Sound mit pizzicato?
+
     }
 
     if(pressedKeys.calculate) {

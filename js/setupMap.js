@@ -1,6 +1,7 @@
 let map = L.map('showMap').setView([37.8, -96], 4);
 
 
+
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
   maxZoom: 18,
   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
@@ -10,6 +11,29 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 }).addTo(map);
 
 
+map.addEventListener('mousemove', function(ev) {
+
+
+
+   if(pressedKeys.navigate) {
+     let lat = ev.latlng.lat;
+     let lng = ev.latlng.lng;
+
+     let nearestFeature = getNearestFeature(lat, lng);
+     console.log(nearestFeature);
+       // Aktuelle Mausposition
+       // Er,ottöe nächste Feature
+       // Nehme dieses als Navigationsausgangspunkt - alle Weiteren Berechnungen auf diesen Koordinaten.
+       // Ermittle kürzeste Distanz
+       // Wenn Sich diese geändert hat:
+       //    Änder Ton
+       //    Ansonsten spiele ton weiter
+       //
+       //    Sound mit pizzicato?
+
+   }
+
+});
 
 setActionOnEachGeoJSONAndAddThemToMapsToBeCompared(map);
 addTopMapToMap();
@@ -35,7 +59,7 @@ function addLegend() {
         '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
         grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
     };
-		
+
     return div;
   };
 
