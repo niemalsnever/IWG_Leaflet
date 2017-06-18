@@ -73,7 +73,6 @@ $(document).on("keypress", function(e) {
       navigationSound.frequency = 0;
     }
   };
-
 });
 
 function setAllKeysFalse() {
