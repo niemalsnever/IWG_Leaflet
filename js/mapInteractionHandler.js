@@ -1,20 +1,46 @@
-
-
 function mouseover(event) {
-    var layer = event.target;
-    pressedKeys.navigate = false;
-    navigationSound.stop();
-    highlightFeature(layer);
-    playBorderSound();
+  var layer = event.target;
+  pressedKeys.navigate = false;
+  navigationSound.stop();
+  highlightFeature(layer);
+  playBorderSound();
 
+  console.log("differenceTopBottomFratureValues() " + differenceTopBottomFratureValues(event));
+  checkScaleForCalculation(event, "difference")
 
-    if(pressedKeys.calculate) {
-      console.log("differenceTopBottomFratureValues() " + differenceTopBottomFratureValues(event));
+  if (pressedKeys.difference) {
+    try {
+      checkScaleForCalculation(event, "difference");
+      differenceTopBottomFratureValues(event);
+
+    } catch (error) {
+      console.log(error);
     }
-    else {
-      sayPropertyName(layer);
-      sayPropertyValueAndUnit(layer);
-    }
+  }
+  else if (pressedKeys.equal) {
+    checkScaleForCalculation(event, "equal");
+    equalityTopBottomFratureValues(event);
+  }
+  else if (pressedKeys.greater) {
+    checkScaleForCalculation(event, "greater");
+    greaterTopBottomFratureValues(event);
+  }
+  else if (pressedKeys.smaller) {
+    checkScaleForCalculation(event, "smaller");
+    smallerTopBottomFratureValues(event);
+  }
+  else if (pressedKeys.add) {
+    checkScaleForCalculation(event, "add");
+    addTopBottomFratureValues(event);
+  }
+  else if(pressedKeys.quotient) {
+    checkScaleForCalculation(event, "quotient");
+    quotientTopBottomFratureValues(event);
+  }
+   else {
+    sayPropertyName(layer);
+    sayPropertyValueAndUnit(layer);
+  }
 
 };
 
@@ -27,7 +53,7 @@ function highlightFeature(layer) {
     fillOpacity: 0.7
   });
 
- if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
   };
 
