@@ -1,20 +1,9 @@
 function checkScaleForCalculation(event, intendedCalculation) {
   const topBottomProperties = getPropertiesOfBothFeatures(event);
-  const topFeature = topBottomProperties.top;
-  const bottomFeature = topBottomProperties.bottom;
+  const topFeature = topBottomProperties.value;
+  const bottomFeature = topBottomProperties.bottomValue;
+}
 
-  if(topFeature.scale === bottomFeature.scale) {
-    if(calculationAllowedForScale(topFeature.scale, intendedCalculation)){
-      return true;
-    }
-    else {
-      throw Error("" + intendedCalculation + " not allowed for " + topFeature.scale);
-    }
-  }
-  else {
-    throw Error("Top and Botom features do not have the same scale");
-  }
-};
 
 function calculationAllowedForScale(scale, intendedCalculation) {
   const allowedCalculation = scaleNiveauCalculation[scale];
@@ -26,10 +15,10 @@ function calculationAllowedForScale(scale, intendedCalculation) {
 function differenceTopBottomFratureValues(event) {
   try {
     const topBottomProperties = getPropertiesOfBothFeatures(event);
-    const topValue = topBottomProperties.top.value;
-    const bottomValue = topBottomProperties.bottom.value;
-    console.log("top : " +topBottomProperties.top.name + " " + topBottomProperties.top.value);
-    console.log("bottom : "+ topBottomProperties.bottom.name + " " + topBottomProperties.bottom.value);
+    const topValue = topBottomProperties.value;
+    const bottomValue = topBottomProperties.bottomValue;
+    console.log("top : " +topValue);
+    console.log("bottom : "+ bottomValue);
     return topValue - bottomValue;
   }
   catch (error) {
@@ -40,10 +29,10 @@ function differenceTopBottomFratureValues(event) {
 function equalityTopBottomFratureValues(event) {
   try{
     const topBottomProperties = getPropertiesOfBothFeatures(event);
-    const topValue = topBottomProperties.top.value;
-    const bottomValue = topBottomProperties.bottom.value;
-    console.log("top : " +topBottomProperties.top.name + " " + topBottomProperties.top.value);
-    console.log("bottom : "+ topBottomProperties.bottom.name + " " + topBottomProperties.bottom.value);
+    const topValue = topBottomProperties.value;
+    const bottomValue = topBottomProperties.bottomValue;
+    console.log("top : " +topValue);
+    console.log("bottom : "+ bottomValue);
     return topValue === bottomValue;
   }
   catch(error) {
@@ -55,10 +44,10 @@ function equalityTopBottomFratureValues(event) {
 function greaterTopBottomFratureValues(event) {
   try{
     const topBottomProperties = getPropertiesOfBothFeatures(event);
-    const topValue = topBottomProperties.top.value;
-    const bottomValue = topBottomProperties.bottom.value;
-    console.log("top : " +topBottomProperties.top.name + " " + topBottomProperties.top.value);
-    console.log("bottom : "+ topBottomProperties.bottom.name + " " + topBottomProperties.bottom.value);
+    const topValue = topBottomProperties.value;
+    const bottomValue = topBottomProperties.bottomValue;
+    console.log("top : " +topValue);
+    console.log("bottom : "+ bottomValue);
     return topValue > bottomValue;
   }
   catch(error) {
@@ -69,10 +58,10 @@ function greaterTopBottomFratureValues(event) {
 function smallerTopBottomFratureValues(event) {
   try{
     const topBottomProperties = getPropertiesOfBothFeatures(event);
-    const topValue = topBottomProperties.top.value;
-    const bottomValue = topBottomProperties.bottom.value;
-    console.log("top : " +topBottomProperties.top.name + " " + topBottomProperties.top.value);
-    console.log("bottom : "+ topBottomProperties.bottom.name + " " + topBottomProperties.bottom.value);
+    const topValue = topBottomProperties.value;
+    const bottomValue = topBottomProperties.bottomValue;
+    console.log("top : " +topValue);
+    console.log("bottom : "+ bottomValue);
     return topValue < bottomValue;
   }
   catch(error) {
@@ -84,10 +73,10 @@ function smallerTopBottomFratureValues(event) {
 function addTopBottomFratureValues(event) {
   try{
     const topBottomProperties = getPropertiesOfBothFeatures(event);
-    const topValue = topBottomProperties.top.value;
-    const bottomValue = topBottomProperties.bottom.value;
-    console.log("top : " +topBottomProperties.top.name + " " + topBottomProperties.top.value);
-    console.log("bottom : "+ topBottomProperties.bottom.name + " " + topBottomProperties.bottom.value);
+    const topValue = topBottomProperties.value;
+    const bottomValue = topBottomProperties.bottomValue;
+    console.log("top : " +topValue);
+    console.log("bottom : "+ bottomValue);
     console.log("ADD");
     console.log(topValue + bottomValue);
     return topValue + bottomValue;
@@ -100,10 +89,10 @@ function addTopBottomFratureValues(event) {
 function quotientTopBottomFratureValues(event) {
   try{
     const topBottomProperties = getPropertiesOfBothFeatures(event);
-    const topValue = topBottomProperties.top.value;
-    const bottomValue = topBottomProperties.bottom.value;
-    console.log("top : " +topBottomProperties.top.name + " " + topBottomProperties.top.value);
-    console.log("bottom : "+ topBottomProperties.bottom.name + " " + topBottomProperties.bottom.value);
+    const topValue = topBottomProperties.value;
+    const bottomValue = topBottomProperties.bottomValue;
+    console.log("top : " +topValue);
+    console.log("bottom : "+ bottomValue);
     console.log("quotient");
     console.log(topValue / bottomValue);
     return topValue / bottomValue;

@@ -4411,7 +4411,7 @@
        "id": "54",
        "properties": {
          "scale": "rational",
-         "name": "West cinia",
+         "name": "West Virginia",
          "value": 77.06,
          "unit": "people per squarekilometer"
        },

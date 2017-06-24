@@ -68,7 +68,7 @@ function resetHighlight(event) {
 
 
 function addTopMapToMap() {
-  mapsToBeCompared.top.leaflet.addTo(map);
+  mapsToBeCompared.top.addTo(map);
 };
 
 

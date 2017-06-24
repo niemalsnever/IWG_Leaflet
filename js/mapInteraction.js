@@ -13,14 +13,7 @@ var pressedKeys = {
 var nearestFeatureToMouseOnMap = null;
 
 var mapsToBeCompared = { // stores the leaflet-GeoJson and the raw GeoJson. Want to use both because it is easier to get bottom values with raw GeoJSON
-  top: {
-    raw: null,
-    leaflet: null
-  },
-  bottom: {
-    raw: null,
-    leaflet: null
-  }
+  top: ""
 };
 
 
@@ -84,49 +77,20 @@ function setAllKeysFalse() {
 };
 
 function getPropertiesOfBothFeatures(event) {
-  const result = {
-    top: event.target.feature.properties,
-    bottom: getBottomFeatureWithCoordinates(event.latlng).properties
-  };
-  console.log(JSON.stringify(result));
-  return result;
+    console.log(event.target.feature.properties);
+    return event.target.feature.properties;
 };
 
-
-
-function getBottomFeatureWithCoordinates(latlng) {
-  for (let i = 0; i < mapsToBeCompared.bottom.raw.features.length; i++) {
-    if (pointInPolygon(latlng, mapsToBeCompared.bottom.raw.features[i].geometry.coordinates[0])) {
-      return mapsToBeCompared.bottom.raw.features[i];
-    }
-  }
-  return false;
-};
 
 
 
 function setActionOnEachGeoJSONAndAddThemToMapsToBeCompared(map) {
-  geojson = L.geoJson(statesData, {
+  geojson = L.geoJson(comparisonFeature, {
     style: setFeatureStyle,
     onEachFeature: addEventsToFeatures
   });
 
-  geojson2 = L.geoJson(statesData2, {
-    style: setFeatureStyle,
-    onEachFeature: addEventsToFeatures
-  });
-
-  let top = {
-    raw: statesData,
-    leaflet: geojson
-  }
-
-  let bottom = {
-    raw: statesData2,
-    leaflet: geojson2
-  }
-
-  addMapsToMapsToBeCompared(top, bottom);
+  addMapsToMapsToBeCompared(geojson);
 };
 
 
@@ -143,7 +107,6 @@ function addEventsToFeatures(feature, layer) {
 
 
 
-function addMapsToMapsToBeCompared(topMap, bottomMap) {
+function addMapsToMapsToBeCompared(topMap) {
   mapsToBeCompared.top = topMap;
-  mapsToBeCompared.bottom = bottomMap;
 };
