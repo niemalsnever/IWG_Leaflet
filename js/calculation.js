@@ -1,8 +1,15 @@
 function checkScaleForCalculation(event, intendedCalculation) {
   const topBottomProperties = getPropertiesOfBothFeatures(event);
-  const topFeature = topBottomProperties.value;
-  const bottomFeature = topBottomProperties.bottomValue;
-}
+  const topFeature = topBottomProperties.top;
+  const bottomFeature = topBottomProperties.bottom;
+
+    if(calculationAllowedForScale(topFeature.scale, intendedCalculation)){
+      return true;
+    }
+    else {
+      throw Error("" + intendedCalculation + " not allowed for " + topFeature.scale);
+    }
+};
 
 
 function calculationAllowedForScale(scale, intendedCalculation) {
