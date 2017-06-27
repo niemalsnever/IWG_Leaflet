@@ -10,6 +10,9 @@ var pressedKeys = {
   navigate: false
 }
 
+var dragging = false;
+
+
 var nearestFeatureToMouseOnMap = null;
 
 var mapsToBeCompared = { // stores the leaflet-GeoJson and the raw GeoJson. Want to use both because it is easier to get bottom values with raw GeoJSON
@@ -28,6 +31,22 @@ $(document).on("keypress", function(e) {
   var code = e.keyCode || e.which;
   console.log(code)
 
+  
+  
+  if(code == 105){ //73 stands for 'i' like informaion
+        responsiveVoice.speak("First Map, countries of the united states. Property, people per squarekilometer. Secound Map, countries of the united states");
+    }
+    if(code == 109){ //68 stands for 'm'
+        if(dragging){
+            console.log("hi");
+            map.dragging.disable();
+            map.setView([37.8, -96], 4);
+            dragging=false;
+        }else{
+            map.dragging.enable();
+            dragging=true;
+        }  
+    }
   if (code === 100) { //100 stands for 'd', like difference
     pressedKeys.difference = !pressedKeys.difference;
     let storePress = pressedKeys.difference;
@@ -147,3 +166,11 @@ function addMapsToMapsToBeCompared(topMap, bottomMap) {
   mapsToBeCompared.top = topMap;
   mapsToBeCompared.bottom = bottomMap;
 };
+
+var mouseOut = function(){
+    responsiveVoice.speak("You left the map ");
+}
+
+var mouseIn = function(){
+    responsiveVoice.speak("You entered the map ");
+}
